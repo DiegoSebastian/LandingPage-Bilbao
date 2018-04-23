@@ -32,8 +32,8 @@
 				<h3>Departamento Comercial</h3>
 				info@chaletsdeobranuevaenbilbao.com <br>
 				chaletsdeobranuevaenbilbao.com	<br>
-				<h2>Folleto:</h2>
-				<a href='#'><img src='/images/logo_jaureguizar.jpg' /></a>		";
+				<h2>Folleto: <a href='https://raw.githubusercontent.com/DiegoSebastian/LandingPage-Bilbao/master/Folleto-Gaztelondo-Berria-con-fotos-piloto_WEB.pdf'> Descargar </a></h2>
+				<a href='https://raw.githubusercontent.com/DiegoSebastian/LandingPage-Bilbao/master/Folleto-Gaztelondo-Berria-con-fotos-piloto_WEB.pdf'><img src='/images/logo_jaureguizar.jpg' /></a>		";
 	
 	$headers = "From: ".$nombre_remitente."\r\n"."Reply-To: ".$correo_remitente."\r\n"."X-Mailer: PHP/".phpversion();
 	function mailutf8($correo_destinatario, $asunto = "(Sin Asunto)", $mensaje="", $header=""){
