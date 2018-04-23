@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name=”description” content="Tu chalet adosado en Bilbao con terrazas, jardín, garaje y txoko. Disfruta de un espacio diseñado para toda la familia, con todo lo que necesites a sólo un paso.">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="styles/app.min.css">
+	<title>Tu chalet adosado en Bilbao con terrazas</title>
+</head>
+<body>
+	<header>
+		<div class="master-container">
+			<div class="container-left animated bounceInLeft">
+				<div class="logo">
+					<img src="images/logo_metrovacesa.png" alt="Logo metrovacesa">
+				</div>
+				<div class="form-container">
+					<h2 class="form-title">Solicita información!</h2>
+					<form action="php/send.php" method="POST">
+						<input type="text" name="nombre" placeholder="Nombre" class="name" required>
+						<input type="email" name="email" placeholder="Email" class="email" required>
+						<!-- <input type="text" name="número_telefónico" placeholder="Número de teléfono" class="number" required>
+						<input type="text" name="codigo_postal" placeholder="Código postal" class="postal" required> -->
+						<textarea name="mensaje" id="message-form" placeholder="Mensaje"  class="message"></textarea>
+						<label for="terminos" class="terms">
+							<input type="checkbox" name="terminos" id="terminos" required> Acepto los 
+							<a href="#" id="check-terms" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Términos y condiciones</a>
+						</label>
+						<input type="hidden" name="_next" value="thanks.html" />
+						<div id="modal" data-iziModal-title="términos y condiciones">
+							<p>AVISO LEGAL Y POLÍTICA DE PRIVACIDAD
+								Clausulas
+								Todos los derechos de propiedad industrial e intelectual del sitio web www.jaureguizahar.com y de sus contenidos (textos, imágenes, sonidos, audio, vídeo, diseños, creatividades, software) pertenecen a Jaureguizar Promoción y Gestión Inmobiliaria, S.L, y no constituyen una fuente accesible al público dentro del ámbito de aplicación del tratamiento de datos de carácter personal.
+								Garantía de protección de datos personales
+								Jaureguizar Promoción y Gestión Inmobiliaria, S.L. asegura la más estricta confidencialidad en la recogida y tratamiento de los datos facilitados por sus usuarios. Así mismo se han adoptado los niveles de seguridad de protección de los datos personales legalmente requeridos, y se han instalado todos los medios y medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos personales facilitados.
+								Los datos personales recogidos serán objeto de tratamiento automatizado e incorporados a los correspondientes ficheros automatizados por Jaureguizar Promoción y Gestión Inmobiliaria, S.L.. Los datos facilitados serán empleados únicamente para las finalidades descritas en el propio formulario de suscripción.
+								En cumplimiento de lo dispuesto en la Ley Orgánica 15/99 del 13 de diciembre de 1999 sobre Protección de Datos de Carácter Personal (LOPD), la persona puede en todo momento ejercitar los derechos de acceso, rectificación, cancelación y revocación del consentimiento para la cesión de sus datos en los términos previstos en la referida Ley y demás normas que la desarrollan, así como en lo dispuesto en la Ley de Servicios de la Sociedad de la Información y del Comercio Electrónico (ley 34/2002 de 11 de julio).
+								Jaureguizar Promoción y Gestión Inmobiliaria, S.L. proporcionará a las personas registradas los recursos técnicos adecuados para que, con carácter previo a la entrega de los datos personales, puedan acceder a este aviso sobre la Política de Protección de Datos de Carácter Personal o a cualquier otra información relevante, y puedan prestar su consentimiento a fin de que Jaureguizar Promoción y Gestión Inmobiliaria, S.L. proceda al tratamiento automatizado de los datos personales de las personas usuarias.
+								Política de Cookies
+								Los “cookies” son archivos almacenados en el ordenador que sirven para reconocer usuarios recurrentes. El objetivo de estos archivos es facilitar y hacer más cómoda la navegación del usuario a través de la web, ya que personaliza ciertos contenidos basándose en las elecciones realizadas por el usuario en la primera visita.
+								Además, estos archivos permiten a Jaureguizar Promoción y Gestión Inmobiliaria, S.L. recopilar estadísticas de navegación y uso de las páginas del sitio web.
+								El uso de estas “cookies” queda limitada a lo especificado en este Aviso legal y no recopilará datos personales.
+								En cualquier caso, el usuario puede deshabilitar las “cookies” cuando desee, bloqueando el uso de dichos archivos por parte del sitio web.</p>
+						</div>
+						<input type="submit" value="Enviar" class="submit">
+					</form>
+				</div>
+			</div>
+			<div class="container-right animated bounceInRight">
+				<h1 class="title">Gaztelondo Berria</h1>
+				<p class="descripcion">
+					Tu <strong>chalet</strong> adosado en <strong>Bilbao</strong> con <strong>terrazas, jardín, garaje y txoko.</strong>
+					Disfruta de un espacio <strong>diseñado para toda la familia</strong>, con <strong>todo lo que necesites</strong> a sólo un paso.
+				</p>
+				<div class="caracteristicas-container">
+					<div class="caracteristica">
+						<div class="icon-container">
+							<i class="fa fa-home"></i>
+						</div>
+						<p class="carac-desc">4 plantas</p>
+					</div>
+					<div class="caracteristica">
+						<div class="icon-container">
+							<i class="fa fa-bed"></i>
+						</div>
+						<p class="carac-desc">3 habitaciones</p>
+					</div>
+					<div class="caracteristica">
+						<div class="icon-container">
+							<i class="fa fa-home"></i>
+						</div>
+						<p class="carac-desc">Superficies: 200-230m<small>2</small> </p>
+					</div>
+					<div class="caracteristica">
+						<div class="icon-container">
+							<i class="fa fa-home"></i>
+						</div>
+						<p class="carac-desc">Ático multiusos: despacho, zona de juegos, dormitorio extra</p>
+					</div>
+				</div>
+				<div class="ubicacion">
+					<h2 class="subtitle">Ubicación</h2>
+					<p>C/Hijas de la Caridad, 76-126 - C/Durango 36-76. Bilbao, Bizkaia</p>
+				</div>
+				<a href="#container-main" class="more">
+					<i class="fa fa-angle-down"></i>
+					<p>Galería</p>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container-main" id="container-main">
+			<h2 class="subtitle">Galería</h2>
+			<div class="galeria-container">
+				<a href="" class="imagen" id="open-image1" data-izimodal-open="#image-modal1">
+					<img src="images/vista_aerea_fachada_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista aerea fachada">
+				</a>
+				<a href="" class="imagen" id="open-image2" data-izimodal-open="#image-modal2">
+					<img src="images/vista_exterior_fachada_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista exterior fachada">
+				</a>
+				<a href="" class="imagen" id="open-image3" data-izimodal-open="#image-modal3">
+					<img src="images/vista_interior_dormitorio_infantil_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior dormitorio infantil">
+				</a>
+				<a href="" class="imagen" id="open-image4" data-izimodal-open="#image-modal4">
+					<img src="images/vista_interior_dormitorio_suite_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interna dormitorio suit">
+				</a>
+				<a href="" class="imagen" id="open-image5" data-izimodal-open="#image-modal5">
+					<img src="images/vista_interior_gran_dormitorio_suite_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior gran dormitorio">
+				</a>
+				<a href="" class="imagen" id="open-image6" data-izimodal-open="#image-modal6">
+					<img src="images/vista_interior_lavabo_grandes_calidadades_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior lavabo">
+				</a>
+				<a href="" class="imagen" id="open-image7" data-izimodal-open="#image-modal7">
+					<img src="images/vista_interior_salon_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior salon">
+				</a>
+				<a href="" class="imagen" id="open-image8" data-izimodal-open="#image-modal8">
+					<img src="images/vista_interior_salon_comedor_cocina_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior comedor">
+				</a>
+				<a href="" class="imagen" id="open-image9" data-izimodal-open="#image-modal9">
+					<img src="images/vista_interior_zona_atico_multiusos_chalets_gaztelondo_berria_metrovacesa.jpg" alt="vista interior zona ático">
+				</a>
+				<div id="image-modal1" data-iziModal-title="Vista aérea chalets">
+					<img src="images/vista_aerea_fachada_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal2" data-iziModal-title="Vista exterior chalets">
+					<img src="images/vista_exterior_fachada_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal3" data-iziModal-title="Vista interior dormitorio infantil">
+					<img src="images/vista_interior_dormitorio_infantil_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal4" data-iziModal-title="Vista interior suite">
+					<img src="images/vista_interior_dormitorio_suite_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal5" data-iziModal-title="Vista interior gran dormitorio">
+					<img src="images/vista_interior_gran_dormitorio_suite_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal6" data-iziModal-title="Vista interior lavabo">
+					<img src="images/vista_interior_lavabo_grandes_calidadades_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal7" data-iziModal-title="Vista inerior salón">
+					<img src="images/vista_interior_salon_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal8" data-iziModal-title="Vista interior comedor">
+					<img src="images/vista_interior_salon_comedor_cocina_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+				<div id="image-modal9" data-iziModal-title="Vista interior ático">
+					<img src="images/vista_interior_zona_atico_multiusos_chalets_gaztelondo_berria_metrovacesa.jpg" alt="">
+				</div>
+			</div>
+			<div class="logo">
+				<img src="images/logo_jaureguizar.jpg" alt="Logo jaureguizar">
+			</div>
+		</div>
+	</main>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

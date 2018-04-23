@@ -1,0 +1,142 @@
+header
+	height: 100vh
+	background: url('../images/vista_exterior_fachada_chalets_gaztelondo_berria_metrovacesa.jpg')
+	background-size: cover
+	.master-container
+		height: 100%
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		.container-left
+			height: 100%
+			display: grid
+			grid-template-columns: 1fr
+			grid-template-rows: 100px 1fr
+			grid-gap: 0 20px
+			grid-template-areas: "logo" "form"
+			justify-content: center
+			align-content: center
+			.logo
+				grid-area: logo
+				align-self: center
+				text-align: center
+				img
+					width: 200px
+			.form-container
+				grid-area: form
+				align-self: center
+				background: rgba(#000, .9)
+				color: #fff
+				text-align: center
+				font-weight: 300
+				width: 500px
+				justify-self: center
+				height: 500px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				border-radius: 8px
+				box-shadow: 5px 5px 8px rgba(#000, .5)
+				.form-title
+					font-weight: 400
+				form
+					display: grid
+					grid-gap: 10px
+					grid-template-columns: repeat(2, 1fr)
+					justify-content: center
+					padding: 30px
+					grid-template-areas: "name email" "number postal" "message message" "terms terms" "submit submit"
+					input, textarea
+						padding: 10px
+						font-size: 16px
+						font-family: 'Open Sans', sans-serif
+					.name
+						grid-area: name
+					.email
+						grid-area: email
+					.number
+						grid-area: number
+					.postal
+						grid-area: postal
+					.message
+						grid-area: message
+					.terms
+						grid-area: terms
+						a
+							color: #fff
+					.submit
+						grid-area: submit
+						border: none
+						cursor: pointer
+						transition: .4s
+						&:hover
+							background: #eee
+					#modal
+						p
+							padding: 20px
+		.container-right
+			background: rgba(#1846be, .85)
+			color: #fff
+			padding: 30px 60px
+			display: grid
+			grid-template-columns: 1fr
+			grid-template-rows: auto auto 30% 100px
+			grid-gap: 20px 0
+			justify-content: center
+			text-align: center
+			box-shadow: -5px 0 8px rgba(#000, .7)
+			height: 100vh
+			position: relative
+			.title
+				font-weight: 300
+				font-size: 36px
+				margin: 0
+			.descripcion
+				text-align: left
+				font-weight: 300
+			.subtitle
+				font-weight: 300
+				font-size: 24px
+			.caracteristicas-container
+				display: grid
+				grid-template-columns: 1fr
+				grid-template-rows: repeat(4, 1fr)
+				align-items: center
+				justify-content: center
+				grid-gap: 5px
+				.caracteristica
+					font-size: 14px
+					display: grid
+					grid-template-columns: 50px 1fr
+					grid-gap: 0 20px
+					.icon-container
+						display: flex
+						justify-content: center
+						align-items: center
+						width: 50px
+						height: 50px
+						text-align: center
+						background: #5e87ed
+						box-shadow: 5px 5px 8px rgba(#000,.7)
+					.carac-desc
+						text-align: left
+						font-weight: 300
+						font-size: 14px
+			.ubicacion
+				margin-top: 30px
+				p
+					display: inline-block
+					margin: 0
+					font-weight: 300
+					font-size: 14px
+				h2
+					display: inline-block
+			.more
+				color: #fff
+				text-decoration: none
+				font-size: 24px
+				text-align: center
+				align-self: start
+				p
+					display: inline-block
+

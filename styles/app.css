@@ -1,0 +1,289 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  height: 100vh;
+  background: url("../images/vista_exterior_fachada_chalets_gaztelondo_berria_metrovacesa.jpg");
+  background-size: cover; }
+  header .master-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    header .master-container .container-left {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 1fr;
+      grid-gap: 0 20px;
+      grid-template-areas: "logo" "form";
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+      header .master-container .container-left .logo {
+        grid-area: logo;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        text-align: center; }
+        header .master-container .container-left .logo img {
+          width: 200px; }
+      header .master-container .container-left .form-container {
+        grid-area: form;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        width: 500px;
+        justify-self: center;
+        height: 500px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 8px;
+        -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); }
+        header .master-container .container-left .form-container .form-title {
+          font-weight: 400; }
+        header .master-container .container-left .form-container form {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(2, 1fr);
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding: 30px;
+          grid-template-areas: "name email" "number postal" "message message" "terms terms" "submit submit"; }
+          header .master-container .container-left .form-container form input, header .master-container .container-left .form-container form textarea {
+            padding: 10px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif; }
+          header .master-container .container-left .form-container form .name {
+            grid-area: name; }
+          header .master-container .container-left .form-container form .email {
+            grid-area: email; }
+          header .master-container .container-left .form-container form .number {
+            grid-area: number; }
+          header .master-container .container-left .form-container form .postal {
+            grid-area: postal; }
+          header .master-container .container-left .form-container form .message {
+            grid-area: message; }
+          header .master-container .container-left .form-container form .terms {
+            grid-area: terms; }
+            header .master-container .container-left .form-container form .terms a {
+              color: #fff; }
+          header .master-container .container-left .form-container form .submit {
+            grid-area: submit;
+            border: none;
+            cursor: pointer;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s; }
+            header .master-container .container-left .form-container form .submit:hover {
+              background: #eee; }
+          header .master-container .container-left .form-container form #modal p {
+            padding: 20px; }
+    header .master-container .container-right {
+      background: rgba(24, 70, 190, 0.85);
+      color: #fff;
+      padding: 30px 60px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 30% 100px;
+      grid-gap: 20px 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      -webkit-box-shadow: -5px 0 8px rgba(0, 0, 0, 0.7);
+      box-shadow: -5px 0 8px rgba(0, 0, 0, 0.7);
+      height: 100vh;
+      position: relative; }
+      header .master-container .container-right .title {
+        font-weight: 300;
+        font-size: 36px;
+        margin: 0; }
+      header .master-container .container-right .descripcion {
+        text-align: left;
+        font-weight: 300; }
+      header .master-container .container-right .subtitle {
+        font-weight: 300;
+        font-size: 24px; }
+      header .master-container .container-right .caracteristicas-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        grid-gap: 5px; }
+        header .master-container .container-right .caracteristicas-container .caracteristica {
+          font-size: 14px;
+          display: grid;
+          grid-template-columns: 50px 1fr;
+          grid-gap: 0 20px; }
+          header .master-container .container-right .caracteristicas-container .caracteristica .icon-container {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background: #5e87ed;
+            -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7); }
+          header .master-container .container-right .caracteristicas-container .caracteristica .carac-desc {
+            text-align: left;
+            font-weight: 300;
+            font-size: 14px; }
+      header .master-container .container-right .ubicacion {
+        margin-top: 30px; }
+        header .master-container .container-right .ubicacion p {
+          display: inline-block;
+          margin: 0;
+          font-weight: 300;
+          font-size: 14px; }
+        header .master-container .container-right .ubicacion h2 {
+          display: inline-block; }
+      header .master-container .container-right .more {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        text-align: center;
+        -webkit-align-self: start;
+        -ms-flex-item-align: start;
+        align-self: start; }
+        header .master-container .container-right .more p {
+          display: inline-block; }
+
+main {
+  background: #ddd;
+  margin: 0;
+  padding: 20px; }
+  main .container-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    main .container-main .subtitle {
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #555;
+      font-weight: 400;
+      font-size: 40px; }
+    main .container-main .galeria-container {
+      display: grid;
+      grid-template-columns: minmax(380px, 840px);
+      grid-template-rows: repeat(3, auto);
+      margin: 0 100px;
+      -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
+      main .container-main .galeria-container .imagen { }
+        main .container-main .galeria-container .imagen img {
+          -webkit-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+          width: 100%; }
+          main .container-main .galeria-container .imagen img:hover {
+            cursor: pointer; }
+    main .container-main .logo {
+      width: 300px;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      display: inline-block;
+      text-align: center; }
+      main .container-main .logo img {
+        width: 100%;
+        padding: 40px; }
+
+@media screen and (max-width: 1100px) {
+  header {
+    height: auto; }
+    header .master-container {
+      grid-template-columns: 1fr;
+      grid-gap: 30px; }
+      header .master-container .container-left, header .master-container .container-right {
+        width: 100vw; } }
+
+@media screen and (max-width: 998px) {
+  main .container-main .galeria-container {
+     } }
+
+@media screen and (max-width: 768px) {
+  header .master-container .container-right {
+    grid-template-rows: 28px 150px 40% 80px; }
+    header .master-container .container-right .title {
+      font-size: 28px; }
+    header .master-container .container-right .descripcion {
+      font-size: 14px; }
+    header .master-container .container-right .ubicacion .subtitle {
+      font-size: 20px; }
+    header .master-container .container-right .ubicacion p {
+      font-size: 14px; }
+    header .master-container .container-right .more {
+      display: none; }
+  main .container-main .galeria-container { } }
+
+@media screen and (max-width: 557px) {
+  header .master-container .container-left .form-container {
+    width: 100vh; }
+    header .master-container .container-left .form-container form {
+      grid-template-columns: 1fr;
+      grid-template-areas: "name" "email" "number" "postal" "message" "terms" "submit"; } }

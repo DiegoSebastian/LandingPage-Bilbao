@@ -1,0 +1,41 @@
+main
+	background: #ddd
+	margin: 0
+	padding: 20px
+	.container-main
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.subtitle
+			margin: 0
+			padding: 20px
+			text-align: center
+			color: #555
+			font-weight: 400
+			font-size: 40px
+		.galeria-container
+			display: grid
+			grid-template-columns: repeat(3, 380px)
+			grid-template-rows: repeat(3, auto)
+			margin: 0 100px
+			box-shadow: 5px 5px 10px rgba(#000, .4)
+			overflow: hidden
+			.imagen
+				overflow: hidden
+				img
+					transition: .4s
+					width: 100%
+					transform: scale(1.05)
+					&:hover
+						transform: scale(1.2)
+						opacity: .8
+						cursor: pointer
+		.logo
+			width: 300px
+			align-self: center
+			display: inline-block
+			text-align: center
+			img
+				width: 100%
+				padding: 40px
